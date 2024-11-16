@@ -3,7 +3,6 @@
 """Defines the class Place"""
 from models.base_model import BaseModel
 
-
 class Place(BaseModel):
     """Represents the class Place that inherits from BaseModel"""
     city_id: str = ""

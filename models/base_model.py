@@ -13,13 +13,15 @@ class BaseModel:
         date_format = "%Y-%m-%dT%H:%M:%S.%f"
 
         if kwargs:
-    	    for key, value in kwargs.items():
+            for key, value in kwargs.items():
                 if key == __class__:
                     continue
                 elif key == "created_at":
-                    self.created_at = datetime.strptime(kwargs[key], date_format)
+                    self.created_at = datetime.strptime
+                    (kwargs[key], date_format)
                 elif key == "updated_at":
-                    self.updated_at = datetime.strptime(kwargs[key], date_format)
+                    self.updated_at = datetime.strptime
+                    (kwargs[key], date_format)
                 else:
                     self.id = kwargs[key]
         else:

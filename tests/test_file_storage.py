@@ -27,7 +27,6 @@ class TestFileStorage(unittest.TestCase):
         """Test if the all() method returns dict"""
         self.assertEqual(dict, type(models.storage.all()))
 
-
     def test_new_with_args(self):
         """Test creating a new object with extra args
         :Should raise TypeError"""

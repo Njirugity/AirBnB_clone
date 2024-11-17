@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import cmd
+from models.base_model import BaseModel
 from models.place import Place
 from models.state import State
 from models.city import City
@@ -8,8 +9,10 @@ from models.review import Review
 from models.base_model import BaseModel
 from models import storage
 
+
 class HBNBCommand(cmd.Cmd):
     classes = {
+        "BaseModel": BaseModel,
         "Place": Place,
         "State": State,
         "City": City,
